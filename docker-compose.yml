@@ -1,0 +1,9 @@
+version: "3"
+services:
+  sothy-personal-blog:
+    container_name: sothy-personal-blog
+    image: nginx
+    ports:
+      - "8802:80"
+    volumes:
+      - .:/usr/share/nginx/html
